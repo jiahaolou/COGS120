@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<title>The Meal Preppers</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3pro.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-teal.css">
+<body>
+    <!--Navigation after clicking hamburger button-->
+    <nav class="w3-sidebar w3-bar-block w3-card" id="mySidebar">
+        <div class="w3-container w3-theme-d2">
+            <span onclick="closeSidebar()" class="w3-button w3-display-topright w3-large">X</span>
+            <br>
+            <div class="w3-padding w3-center">
+                <img class="w3-circle" src="image/UCSD.png" alt="Steven Lou" style="width:75%">
+            </div>
+        </div>
+        <a class="w3-bar-item w3-button" href="diy.html">DIY</a>
+        <a class="w3-bar-item w3-button" href="#">Trends</a>
+        <a class="w3-bar-item w3-button" href="#">Easy&Quick</a>
+        <a class="w3-bar-item w3-button" href="#">Post-Workout</a>
+        <a class="w3-bar-item w3-button" href="#">Weight Loss</a>
+    </nav>
+
+    <!--Header + hamburger button-->
+    <header class="w3-top w3-bar w3-theme">
+        <button class="w3-bar-item w3-button w3-xxxlarge w3-hover-theme" onclick="openSidebar()">&#9776;</button>
+        <h1 class="w3-bar-item">Meal Preppers</h1>
+    </header>
+
+    <div class="w3-container" style="margin-top:90px">
+        <!--Search Box-->
+        <hr>
+        <div class="w3-cell-row">    
+            <input class="w3-input w3-border" type="text" placeholder="Search for your recipe!">        
+        </div> 
+        <!--DIY--> 
+        <hr>
+        <a href="diy.html">
+        <div class="w3-cell-row">
+            <div class="w3-cell" style="width:30%">
+                <img class="w3-rounded" src="image/diy.jpg" style="width:100%">
+            </div>
+            <div class="w3-cell w3-container">
+                <h3>DIY</h3>
+                <p>Customizing your own meals!</p>
+            </div>
+        </div>
+        </a>
+        <!--Trends-->
+        <hr>
+        <div class="w3-cell-row">
+            <div class="w3-cell" style="width:30%">
+                <img class="w3-rounded" src="image/trends.jpg" style="width:100%">
+            </div>
+            <div class="w3-cell w3-container">
+                <h3>Trends</h3>
+                <p>What people love to cook.</p>
+            </div>
+        </div>
+        <!--Easy & Quick-->
+        <hr>
+        <div class="w3-cell-row">
+            <div class="w3-cell" style="width:30%">
+                <img class="w3-rounded" src="image/easyquick.jpg" style="width:100%">
+            </div>
+            <div class="w3-cell w3-container">
+                <h3>Easy&Quick</h3>
+                <p>Ready in 15 minutes.</p>
+            </div>
+        </div>
+        <!--Post-Workout-->
+        <hr>
+        <div class="w3-cell-row">
+            <div class="w3-cell" style="width:30%">
+                <img class="w3-rounded" src="image/postworkout.jpg" style="width:100%">
+            </div>
+            <div class="w3-cell w3-container">
+                <h3>Post-workout Meal</h3>
+                <p>Lots of proteins!</p>
+            </div>
+        </div>
+        <!--Weight Loss-->
+        <hr>
+        <div class="w3-cell-row">
+            <div class="w3-cell" style="width:30%">
+                <img class="w3-rounded" src="image/weightloss.jpg" style="width:100%">
+            </div>
+            <div class="w3-cell w3-container">
+                <h3>Weight Loss</h3>
+                <p>Low in calories.</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <br>
+    <br>
+    <br>
+
+    <!--Footer icons-->
+    <footer class="w3-container w3-bottom w3-theme w3-margin-top">
+        <div class="w3-row-padding">
+            <a href="index.html"><div class="w3-quarter" style="width:25%">
+                <img class="w3-rounded" src="image/home.svg" style="width:80%">
+            </div></a>
+            <div class="w3-quarter" style="width:25%">
+                <img class="w3-rounded" src="image/share.svg" style="width:80%">
+            </div>
+            <div class="w3-quarter" style="width:25%">
+                <img class="w3-rounded" src="image/heart.svg" style="width:80%">
+            </div>
+            <div class="w3-quarter" style="width:25%">
+                <img class="w3-rounded" src="image/user.svg" style="width:80%">
+            </div>
+        </div>
+    </footer>
+
+    <!--JavaScript-->
+    <script>
+        closeSidebar();
+        function openSidebar() {
+        document.getElementById("mySidebar").style.display = "block";
+        }
+        
+        function closeSidebar() {
+        document.getElementById("mySidebar").style.display = "none";
+        }
+    </script>
+
+</body>
